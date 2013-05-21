@@ -1,0 +1,182 @@
+body { -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }
+
+.clearfix {zoom:1;}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;}
+/*
+fonts.css from the YUI Library: developer.yahoo.com/yui/
+Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages
+*/
+body { font:13px sans-serif; *font-size:small; *font:x-small; line-height:1.5; color: #333333;-webkit-font-smoothing: antialias; }
+body.win{ font-family: "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", sans-serif; }
+table { font-size:inherit; font:100%; }
+select, input, textarea { font:99% sans-serif; }
+
+.font10{ font-size: 77%; }
+.font11{ font-size: 85%; }
+.font12{ font-size: 93%; }
+.font13{ font-size: 100%; }
+.font14{ font-size: 108%; }
+.font15{ font-size: 116%; }
+.font16{ font-size: 123%; }
+.font17{ font-size: 131%; }
+.font18{ font-size: 138%; }
+.font19{ font-size: 146%; }
+.font20{ font-size: 153%; }
+.font21{ font-size: 161%; }
+.font22{ font-size: 167%; }
+.font23{ font-size: 174%; }
+.font24{ font-size: 182%; }
+.font25{ font-size: 189%; }
+.font26{ font-size: 197%; }
+
+.weight100{ font-weight: 100; }
+.weight200{ font-weight: 200; }
+.weight300{ font-weight: 300; }
+.weight400{ font-weight: 400; }
+.weight500{ font-weight: 500; }
+.weight600{ font-weight: 600; }
+.weight700{ font-weight: 700; }
+.weight800{ font-weight: 800; }
+.weight100{ font-weight: 900; }
+
+/* maxvoltar.com/archive/-webkit-font-smoothing */
+html { -webkit-font-smoothing: antialiased; }
+
+/* align checkboxes, radios, text inputs with their label */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+/* bicubic resizing for non-native sized IMG:
+code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+/*clearfix*/
+
+.clearfix {zoom:1;}
+.clearfix:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*dkir*/
+
+.dkirBox {
+    position: relative;
+    z-index: 3;
+    zoom: 1;
+
+	overflow: hidden;
+	zoom:1;
+}
+
+.dkir {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+	overflow: hidden;
+	zoom:1;
+}
+
+.dkir span {
+    position: relative;
+    z-index: -1;
+}
+
+/*table
+	<!--[if lte IE 7]><span class="dummy"></span><![endif]-->
+*/
+
+.table
+{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.mutable-table
+{
+	display: table;
+    min-width: 100%;
+	min-height: 100%;
+}
+
+.ie6 .mutable-table
+{
+	width: 100%;
+	height: 100%;
+}
+
+.table .cell
+{
+    display: table-cell;
+}
+
+.table .cell.top{vertical-align: top;}
+.table .cell.middle{vertical-align: middle;}
+.table .cell.bottom{vertical-align: bottom;}
+.table .cell.left{ text-align: left; }
+.table .cell.center{ text-align: center; }
+.table .cell.right{ text-align: right; }
+
+/* for IE6 */
+
+.ie6 .table .cell {
+    display: inline;
+	zoom: 1;
+
+	width: 100%;
+	overflow: auto;
+}
+
+.ie6 .table .cell.top { vertical-align: top; }
+.ie6 .table .cell.middle { vertical-align: middle; }
+.ie6 .table .cell.bottom { vertical-align: bottom; }
+.ie6 .table .cell.left{ text-align: left; }
+.ie6 .table .cell.center{ text-align:  center; }
+.ie6 .table .cell.right { text-align: right; }
+
+
+.ie6 .table .dummy {
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+	overflow: hidden;
+	zoom:1;
+}
+
+/* for IE7 */
+
+.ie7 .table .cell {
+    display: inline;
+	zoom: 1;
+
+	width: 100%;
+	overflow: auto;
+}
+
+.ie7 .table .cell.top { vertical-align: top; }
+.ie7 .table .cell.middle { vertical-align: middle; }
+.ie7 .table .cell.bottom { vertical-align: bottom; }
+.ie7 .table .cell.left{ text-align: left; }
+.ie7 .table .cell.center{ text-align:  center; }
+.ie7 .table .cell.right { text-align: right; }
+
+
+.ie7 .table .dummy {
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+	overflow: hidden;
+	zoom:1;
+}

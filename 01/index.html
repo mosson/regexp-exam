@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+  <!--meta-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css"/>
+	<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+  <!--title-->
+	<title>正規表現ドリル</title>
+
+  <!--style-->
+  <link rel="stylesheet" type="text/css" href="libs/css/utils.css"/>
+  <link rel="stylesheet" type="text/css" href="libs/css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/css/ui.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+  <!--script-->
+  <script type="text/javascript" charset="UTF-8" src="libs/js/jquery-1.7.1.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="libs/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="libs/js/jquery.animate-enhanced.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="libs/js/jquery.belatedPNG.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="libs/js/jquery.json-2.2.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="libs/js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="libs/js/jscrollpane.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="libs/js/jquery.utils.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="libs/js/jquery.exfixed.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="libs/js/trimpath-template-1.0.38.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="libs/js/Fourdigit.utils.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="libs/js/defineClass.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="libs/js/Checkbox.js"></script>
+
+	<!--//=========================================================-->
+
+	<link rel="stylesheet" type="text/css" href="libs/js/sbox/shadowbox.css"/>
+	<script type="text/javascript" charset="UTF-8" src="libs/js/sbox/shadowbox.js"></script>
+
+	<!--//=========================================================-->
+	<script type="text/javascript" charset="UTF-8" src="js/regex_quiz.js"></script>
+	<script type="text/javascript">
+
+		var question = {
+			s: "正規表現ドリル", //左上の文字
+			q: "この問題は2012年に作成されました", //問題
+			d: "数字すべてを抜き出しなさい", //問題文
+			a: "2012"  //抜き出すべき答え
+		};
+	</script>
+
+
+</head>
+<!--[if lt IE 7 ]><body class="ie6 creativesurvey"><![endif]-->
+<!--[if IE 7 ]><body class="ie7 creativesurvey"><![endif]-->
+<!--[if IE 8 ]><body class="ie8 creativesurvey"><![endif]-->
+<!--[if IE 9 ]><body class="ie9 creativesurvey"><![endif<]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body class="creativesurvey"><!--<![endif]-->
+
+<div id="Container">
+	<div class="table">
+		<!--[if lte IE 7]><span class="dummy"></span><![endif]-->
+		<div class="cell middle center">
+			<div class="s"></div>
+			<div class="q"></div>
+			<div class="d"></div>
+			<div class="i">/ <textarea id="Reg"></textarea> /</div>
+			<div class="t">00:00:00</div>
+			<a href="javascript:void(0)" class="blue-button w300" id="Submit">回答する</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
